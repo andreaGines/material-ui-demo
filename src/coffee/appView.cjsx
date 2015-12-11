@@ -7,8 +7,10 @@ Globals = require('./globals')
 Resources = require('./resources')
 
 Mui = require('material-ui')
-{Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar} = require('material-ui')
+{Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles} = require('material-ui')
+SwipeableViews = require('react-swipeable-views')
 
+styles = require('material-ui/lib/styles')
 List = require('material-ui/lib/lists/list')
 ListItem = require('material-ui/lib/lists/list-item')
 Colors = require('material-ui/lib/styles/colors')
@@ -22,6 +24,11 @@ appView = React.createClass
     #################################
     #       React Functions
     #################################
+    getInitialState: ->
+        {
+            slideIndex: 0
+        }
+
     componentDidMount: ->
         @props.model.on('change', @update)
 
@@ -29,18 +36,38 @@ appView = React.createClass
         console.log "updating"
         @forceUpdate()
 
+    _handleChangeTabs: (value, event, tab) ->
+        # @state.slideIndex = value doesnt do anything...
+        @setState {slideIndex: parseInt(value, 10)}
+
+        console.log value
+
+    _handleChangeIndex: (index) ->
+        @setState {slideIndex: index}
+
+        console.log "changing index"
+        console.log e
+
     render: ->
         <div className='app-div' id='awesome-441-app-div'>
-            <Tabs valueLink="">
-                <Tab label="Tab A" value="a" >
-                    (Tab content...)
-                </Tab>
-                <Tab label="Tab B" value="b">
-                    (Tab content...)
-                </Tab>
+            
+            <Tabs onChange={@_handleChangeTabs} value={@state.slideIndex + ''} ref='mainTabs'>
+              <Tab label="Home" value="0" />
+              <Tab label="Instructions" value="1" />
+              <Tab label="About Us" value="2" />
             </Tabs>
-
-        
+            <SwipeableViews index={@state.slideIndex} onChangeIndex={@_handleChangeIndex}>
+              <div className='container'>
+                <h2 style={styles.headline}>Tabs with slide effect</h2>
+                Swipe to see the next slide.<br />
+              </div>
+              <div style={styles.slide} className='container'>
+                slide n°2
+              </div>
+              <div style={styles.slide} className='container'>
+                slide n°3
+              </div>
+            </SwipeableViews>
             
 
         </div>
