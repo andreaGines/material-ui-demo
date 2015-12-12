@@ -51,6 +51,7 @@ aboutUsPage = React.createClass
               title="The Team!"
               subtitle="The top-notch developers behind the project"
               avatar={<Avatar>AT</Avatar>}/>
+            <div className='spacer'></div>
             <CardHeader
               title="Andrea Gines"
               subtitle="BS Computer Science and Economics"
@@ -61,35 +62,35 @@ aboutUsPage = React.createClass
               </div>
             </CardMedia>
             <CardTitle title="About Andrea!" subtitle="Developer"/>
-            <CardActions>
-              <FlatButton linkButton={true} label="Github" href='https://github.com/andreaGines' />
-              <FlatButton linkButton={true} label="LinkedIn" href='https://www.linkedin.com/in/andreagines'/>
-            </CardActions>
             <CardText>
               A University of Michigan 2015 graduate with big plans ahead! Accomplishments include crushing EECS 381, EECS 482,
               and now producing beautiful and user friendly apps in EECS 493!
             </CardText>
+            <CardActions>
+              <FlatButton linkButton={true} label="Github" href='https://github.com/andreaGines' />
+              <FlatButton linkButton={true} label="LinkedIn" href='https://www.linkedin.com/in/andreagines'/>
+            </CardActions>
           </Card>
           <div className='spacer'></div>
           <Card>
             <CardHeader
               title="Tyler Markvluwer"
               subtitle="BSE Computer Science and Engineering"
-              avatar="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAIBAAAAJGU5MWI1YmJlLWQyMjItNGQzNC1hN2E1LTM4MTY3NTBlNmUwYg.jpg"/>
+              avatar="tyler_fun.jpg"/>
             <CardMedia overlay={<CardTitle title="Holland, MI" subtitle="Tyler's place of origin."/>}>
               <div className='cutoff-frame'>
-                <img src="http://www.vitopalmisano.com/data/photos/426_1big_red_pan_duskpsd_final.jpg"/>
+                <img src="big-red.jpg"/>
               </div>
             </CardMedia>
             <CardTitle title="About Tyler!" subtitle="Developer"/>
-            <CardActions>
-              <FlatButton linkButton={true} label="Github" href='https://github.com/tyler-markvluwer' />
-              <FlatButton linkButton={true} label="LinkedIn" href='https://www.linkedin.com/pub/tyler-markvluwer/40/5b2/5b'/>
-            </CardActions>
             <CardText>
               A University of Michigan 2015 graduate with big plans ahead! Accomplishments include crushing EECS 381, and completing
               multiple mobile apps and side projects.
             </CardText>
+            <CardActions>
+              <FlatButton linkButton={true} label="Github" href='https://github.com/tyler-markvluwer' />
+              <FlatButton linkButton={true} label="LinkedIn" href='https://www.linkedin.com/pub/tyler-markvluwer/40/5b2/5b'/>
+            </CardActions>
           </Card>
           <div className='spacer'></div>
         </div>
