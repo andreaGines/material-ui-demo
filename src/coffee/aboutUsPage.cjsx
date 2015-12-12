@@ -48,7 +48,7 @@ aboutUsPage = React.createClass
           <div className='spacer'></div>
           <Card>
             <CardHeader
-              title="The Team!"
+              title="The Team! The Team! The Team!"
               subtitle="The top-notch developers behind the project"
               avatar={<Avatar>AT</Avatar>}/>
             <div className='spacer'></div>
@@ -56,7 +56,7 @@ aboutUsPage = React.createClass
               title="Andrea Gines"
               subtitle="BS Computer Science and Economics"
               avatar="andrea_professional.jpg"/>
-            <CardMedia overlay={<CardTitle title="Puerto Rico" subtitle="Andrea's place of origin."/>}>
+            <CardMedia overlay={<CardTitle title="San Juan, Puerto Rico" subtitle="Andrea's place of origin."/>}>
               <div className='cutoff-frame'>
                 <img src="http://www.carnival.com/~/media/Images/PreSales/Excursions/Ports_R-V/SJU/427033/Pictures/fortresses-of-old-san-juan-san-juan-puerto-rico-1.ashx"/>
               </div>
