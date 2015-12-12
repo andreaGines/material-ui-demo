@@ -6,6 +6,8 @@ SpinnerNewView = require('./spinnerNewView')
 Globals = require('./globals')
 Resources = require('./resources')
 
+AboutUsPage = require('./aboutUsPage')
+
 Mui = require('material-ui')
 {Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles} = require('material-ui')
 SwipeableViews = require('react-swipeable-views')
@@ -65,7 +67,7 @@ appView = React.createClass
                 slide n°2
               </div>
               <div style={styles.slide} className='container'>
-                slide n°3
+                <AboutUsPage />
               </div>
             </SwipeableViews>
             
