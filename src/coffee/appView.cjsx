@@ -7,6 +7,7 @@ Globals = require('./globals')
 Resources = require('./resources')
 
 AboutUsPage = require('./aboutUsPage')
+HomePage = require('./homePage')
 
 Mui = require('material-ui')
 {Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles} = require('material-ui')
@@ -60,8 +61,7 @@ appView = React.createClass
             </Tabs>
             <SwipeableViews index={@state.slideIndex} onChangeIndex={@_handleChangeIndex}>
               <div className='container'>
-                <h2 style={styles.headline}>Tabs with slide effect</h2>
-                Swipe to see the next slide.<br />
+                <HomePage/>
               </div>
               <div style={styles.slide} className='container'>
                 slide n°2
