@@ -2,7 +2,7 @@ React = require('react')
 
 
 Mui = require('material-ui')
-{Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles, Paper} = require('material-ui')
+{Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles, Paper, RaisedButton} = require('material-ui')
 SwipeableViews = require('react-swipeable-views')
 
 styles = require('material-ui/lib/styles')
@@ -52,6 +52,19 @@ homePage = React.createClass
                     </div>
                 </div>
             </section>
+        </Paper>
+
+        <div className='spacer'></div>
+        <Paper zDepth={2}>
+            <div className='container'>
+                <h2 className="text-center" style={styles.headline}>Experience the App!</h2>
+                <div className='text-center'>
+                    <RaisedButton linkButton={true} label="Go to app" primary={true} href='//www-personal.umich.edu/~tylermar' />
+                    <div className='spacer'></div>
+                    <RaisedButton linkButton={true} label="See the Code" primary={true} href='https://github.com/tyler-markvluwer/material-ui-demo' />
+                </div>
+                <div className='spacer'></div>
+            </div>
         </Paper>
       </div>
      
