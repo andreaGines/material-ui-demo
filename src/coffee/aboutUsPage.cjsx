@@ -53,7 +53,7 @@ aboutUsPage = React.createClass
               avatar={<Avatar>AT</Avatar>}/>
             <CardHeader
               title="Andrea Gines"
-              subtitle="BS Computer Science and Econ"
+              subtitle="BS Computer Science and Economics"
               avatar="andrea_professional.jpg"/>
             <CardMedia overlay={<CardTitle title="Puerto Rico" subtitle="Andrea's place of origin."/>}>
               <div className='cutoff-frame'>
