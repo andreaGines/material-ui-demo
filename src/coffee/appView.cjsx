@@ -52,15 +52,15 @@ appView = React.createClass
         console.log e
 
     render: ->
-        <div className='app-div' id='awesome-441-app-div'>
+        <div className='app-div' id='awesome-441-app-div' style={{width: '100%', height: '100%'}}>
             
             <Tabs onChange={@_handleChangeTabs} value={@state.slideIndex + ''} ref='mainTabs'>
               <Tab label="Home" value="0" />
               <Tab label="Instructions" value="1" />
               <Tab label="About Us" value="2" />
             </Tabs>
-            <SwipeableViews index={@state.slideIndex} onChangeIndex={@_handleChangeIndex}>
-              <div className='container'>
+            <SwipeableViews index={@state.slideIndex} onChangeIndex={@_handleChangeIndex} style={{height: '90%'}}>
+              <div className='fluid-container'>
                 <HomePage/>
               </div>
               <div style={styles.slide} className='container'>
