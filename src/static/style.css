@@ -1,0 +1,14 @@
+.spacer {
+	height: 20px;
+}
+
+.fun-img {
+    height: auto; 
+    width: auto;
+}
+
+.cutoff-frame {
+	max-height: 100000px;
+    width: 100%;
+    overflow: hidden;
+}
