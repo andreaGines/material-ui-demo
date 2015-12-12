@@ -8,6 +8,7 @@ Resources = require('./resources')
 
 AboutUsPage = require('./aboutUsPage')
 HomePage = require('./homePage')
+InstructionsPage = require('./instructionsPage')
 
 Mui = require('material-ui')
 {Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles} = require('material-ui')
@@ -64,7 +65,7 @@ appView = React.createClass
                 <HomePage/>
               </div>
               <div style={styles.slide} className='container'>
-                slide n°2
+                <InstructionsPage/>
               </div>
               <div style={styles.slide} className='container'>
                 <AboutUsPage />
