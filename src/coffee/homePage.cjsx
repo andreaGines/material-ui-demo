@@ -61,7 +61,7 @@ homePage = React.createClass
                 <div className='text-center'>
                     <RaisedButton linkButton={true} label="Go to app" primary={true} href='//www-personal.umich.edu/~tylermar' />
                     <div className='spacer'></div>
-                    <RaisedButton linkButton={true} label="See the Code" primary={true} href='https://github.com/tyler-markvluwer/material-ui-demo' />
+                    <RaisedButton linkButton={true} label="See App Code" primary={true} href='https://github.com/tyler-markvluwer/material-ui-demo' />
                 </div>
                 <div className='spacer'></div>
             </div>
