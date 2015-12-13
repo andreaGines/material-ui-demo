@@ -1,31 +1,15 @@
 React = require('react')
 
 
-Mui = require('material-ui')
 {Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles, Paper, RaisedButton} = require('material-ui')
-SwipeableViews = require('react-swipeable-views')
 
 styles = require('material-ui/lib/styles')
-List = require('material-ui/lib/lists/list')
-ListItem = require('material-ui/lib/lists/list-item')
 Colors = require('material-ui/lib/styles/colors')
-NavigationClose = require('material-ui/lib/svg-icons/navigation/close')
-MoreVertIcon = require('material-ui/lib/svg-icons/navigation/more-vert')
-Avatar = require('material-ui/lib/avatar');
-FileFolder = require('material-ui/lib/svg-icons/file/folder')
-
 
 homePage = React.createClass    
     #################################
     #       React Functions
     #################################
-
-    componentDidMount: ->
-        #@props.model.on('change', @update)
-
-    update: ->
-        console.log "updating"
-        @forceUpdate()
 
     render: ->  
       <div className='container'>

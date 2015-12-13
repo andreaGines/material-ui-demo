@@ -1,36 +1,20 @@
 React = require('react')
+HowToImage = require('./HowToImage')
 
-
-Mui = require('material-ui')
 {Tab, Tabs, FlatButton, AppBar, MenuItem, LeftNav, Snackbar, Styles} = require('material-ui')
-SwipeableViews = require('react-swipeable-views')
 
 styles = require('material-ui/lib/styles')
-List = require('material-ui/lib/lists/list')
-ListItem = require('material-ui/lib/lists/list-item')
 Colors = require('material-ui/lib/styles/colors')
-NavigationClose = require('material-ui/lib/svg-icons/navigation/close')
-MoreVertIcon = require('material-ui/lib/svg-icons/navigation/more-vert')
-Avatar = require('material-ui/lib/avatar');
-FileFolder = require('material-ui/lib/svg-icons/file/folder')
-
 
 instructionsPage = React.createClass    
     #################################
     #       React Functions
     #################################
 
-    componentDidMount: ->
-        #@props.model.on('change', @update)
-
-    update: ->
-        console.log "updating"
-        @forceUpdate()
-
     render: ->  
       <div className='container'>
           <div className="row" className="container content-section text-center">
-                <div className="col-lg-8 col-lg-offset-2">
+                <div className="col-lg-12">
                     <ul className="list-unstyled">
                         <li>
                             <h2>Home</h2>
@@ -38,6 +22,23 @@ instructionsPage = React.createClass
                                 Clicking on any of the spinners on this page will take you to the 'ShuffleIt' page. 
                                 Here, the spinner that was most recently selected will be ready to spin!
                             </p>
+                            <HowToImage
+                                headerTitle="Home Screen"
+                                headerChar="H"
+                                title="All Spinners"
+                                subtitle="All the user's spinners displayed in one place, with cover images."
+                                imgUrl='all_1.png'
+                            >
+                            </HowToImage>
+                            <div className='spacer'></div>
+                            <HowToImage
+                                headerTitle="Home Screen"
+                                headerChar="H"
+                                title="All Spinners - Options"
+                                subtitle="Within the all spinners page you can jump to edit or shuffle views!"
+                                imgUrl='all_2.png'
+                            >
+                            </HowToImage>
                         </li>
                         <li>
                             <h2>ShuffleIt</h2>
@@ -51,6 +52,32 @@ instructionsPage = React.createClass
                             Once a decision has been made, a dialog will appear, giving the option to 'Share' on Facebook,
                             or try again, if you would like to shuffle some more!
                             </p>
+                            <HowToImage
+                                headerTitle="ShuffleIt Screen"
+                                headerChar="S"
+                                title="ShuffleIt"
+                                subtitle="Select a recent spinner from below, and prepare to shuffle"
+                                imgUrl='shuffle_1.png'
+                            >
+                            </HowToImage>
+                            <div className='spacer'></div>
+                            <HowToImage
+                                headerTitle="ShuffleIt Screen"
+                                headerChar="S"
+                                title="ShuffleIt - Decision Made!"
+                                subtitle="After a decision has been made, try again, or share on Facebook!"
+                                imgUrl='shuffle_2.png'
+                            >
+                            </HowToImage>
+                            <div className='spacer'></div>
+                            <HowToImage
+                                headerTitle="ShuffleIt Screen"
+                                headerChar="S"
+                                title="ShuffleIt - Post to Facebook!"
+                                subtitle="Posting to Facebook is super easy!"
+                                imgUrl='shuffle_3.png'
+                            >
+                            </HowToImage>
                         </li>
                         <li>
                             <h2>Edit Spinner</h2>
@@ -75,6 +102,23 @@ instructionsPage = React.createClass
                             icon on the right side. You can click this in order to 'Disable', 'Edit', or 'Delete'
                             a tile from your spinner.
                             </p>
+                            <HowToImage
+                                headerTitle="Edit Screen"
+                                headerChar="E"
+                                title="Edit - Add a Tile!"
+                                subtitle="Adding tiles is easy!"
+                                imgUrl='edit_1.png'
+                            >
+                            </HowToImage>
+                            <div className='spacer'></div>
+                            <HowToImage
+                                headerTitle="Edit Screen"
+                                headerChar="E"
+                                title="Edit - Modify Tiles"
+                                subtitle="You can disable/enable, edit, or delete existing tiles."
+                                imgUrl='edit_2.png'
+                            >
+                            </HowToImage>
                         </li>
                         <li>
                             <h2>New Spinner</h2>
@@ -90,6 +134,23 @@ instructionsPage = React.createClass
                             right will turn red. In order to proceed to the next page, you will click 'Save' on the top right of the menu
                             bar. Clicking save will take you to the 'Edit' page where you can start to add tiles to your new spinner!
                             </p>
+                            <HowToImage
+                                headerTitle="New Spinner Screen"
+                                headerChar="N"
+                                title="New Spinner - Choose a Name"
+                                subtitle="Make sure you choose a unique name for your new spinner!"
+                                imgUrl='new_1.png'
+                            >
+                            </HowToImage>
+                            <div className='spacer'></div>
+                            <HowToImage
+                                headerTitle="New Spinner Screen"
+                                headerChar="N"
+                                title="New Spinner - Image Selection"
+                                subtitle="Next, choose a cover photo for your new spinner!"
+                                imgUrl='new_2.png'
+                            >
+                            </HowToImage>
                         </li>
                     </ul> 
                 </div>
