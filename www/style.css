@@ -1,0 +1,19 @@
+.spacer {
+	height: 20px;
+}
+
+.fun-img {
+    height: auto; 
+    width: auto;
+}
+
+.cutoff-frame {
+	max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scale-frame.resize {
+	width:400px; /* you can use % */
+	height: auto;
+}

@@ -43,7 +43,7 @@ homePage = React.createClass
             <div className='container'>
                 <h2 className="text-center" style={styles.headline}>Experience the App!</h2>
                 <div className='text-center'>
-                    <RaisedButton linkButton={true} label="Go to app" primary={true} href='//www-personal.umich.edu/~tylermar' />
+                    <RaisedButton linkButton={true} label="Go to app" primary={true} href='http://www-personal.umich.edu/~tylermar' />
                     <div className='spacer'></div>
                     <RaisedButton linkButton={true} label="See App Code" primary={true} href='https://github.com/tyler-markvluwer/material-ui-demo' />
                 </div>
